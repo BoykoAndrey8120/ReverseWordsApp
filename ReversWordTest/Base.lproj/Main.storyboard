@@ -1,24 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReversWordTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MTZ-xD-4aN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Text to reverse" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="srK-iz-db9" customClass="CustomTextField" customModule="ReversWordTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="278.5" width="414" height="66.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="srK-iz-db9" secondAttribute="height" multiplier="6.25:1" id="5Ng-T7-ND5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwE-6R-q1C">
+                                <rect key="frame" x="16" y="733.5" width="382" height="62.5"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HwE-6R-q1C" secondAttribute="height" multiplier="6.125:1" id="ept-QN-v7d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <state key="normal" title="Reverse">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapResultButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ubw-xg-FEu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reverse Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQe-R7-MCk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="48.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OQe-R7-MCk" secondAttribute="height" multiplier="8.522:1" id="CEu-L7-9bN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reverse Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5b-hV-WKn">
+                                <rect key="frame" x="16" y="141" width="382" height="40.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="V5b-hV-WKn" secondAttribute="height" multiplier="9.341:1" id="MMX-n4-a8x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This application will reverse your words. Please type text below " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uy-NJ-KR6">
+                                <rect key="frame" x="16" y="197.5" width="382" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1uy-NJ-KR6" secondAttribute="height" multiplier="9.341:1" id="HEu-lS-Vph"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.54555942357512954" green="0.54555942357512954" blue="0.54555942357512954" alpha="0.59773877640845074" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Ru-4P-j8B">
+                                <rect key="frame" x="16" y="369" width="382" height="340.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0uL-zy-PSH"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0uL-zy-PSH" firstAttribute="trailing" secondItem="OQe-R7-MCk" secondAttribute="trailing" id="5s8-2L-kFP"/>
+                            <constraint firstItem="srK-iz-db9" firstAttribute="top" secondItem="1uy-NJ-KR6" secondAttribute="bottom" constant="40" id="CoB-oa-04v"/>
+                            <constraint firstItem="HwE-6R-q1C" firstAttribute="leading" secondItem="0uL-zy-PSH" secondAttribute="leading" constant="16" id="EdM-6h-lEn"/>
+                            <constraint firstItem="9Ru-4P-j8B" firstAttribute="leading" secondItem="0uL-zy-PSH" secondAttribute="leading" constant="16" id="ErU-b3-ALB"/>
+                            <constraint firstItem="0uL-zy-PSH" firstAttribute="trailing" secondItem="V5b-hV-WKn" secondAttribute="trailing" constant="16" id="Rbc-t5-Brk"/>
+                            <constraint firstItem="0uL-zy-PSH" firstAttribute="bottom" secondItem="HwE-6R-q1C" secondAttribute="bottom" constant="66" id="V1P-0t-9me"/>
+                            <constraint firstItem="9Ru-4P-j8B" firstAttribute="top" secondItem="srK-iz-db9" secondAttribute="bottom" constant="24" id="VF5-Z7-576"/>
+                            <constraint firstItem="HwE-6R-q1C" firstAttribute="top" secondItem="9Ru-4P-j8B" secondAttribute="bottom" constant="24" id="aSN-Gn-n04"/>
+                            <constraint firstItem="OQe-R7-MCk" firstAttribute="leading" secondItem="0uL-zy-PSH" secondAttribute="leading" id="dHb-FS-hpt"/>
+                            <constraint firstItem="0uL-zy-PSH" firstAttribute="trailing" secondItem="9Ru-4P-j8B" secondAttribute="trailing" constant="16" id="dv8-Ur-npt"/>
+                            <constraint firstItem="0uL-zy-PSH" firstAttribute="trailing" secondItem="srK-iz-db9" secondAttribute="trailing" id="h0C-LD-J6w"/>
+                            <constraint firstItem="1uy-NJ-KR6" firstAttribute="leading" secondItem="0uL-zy-PSH" secondAttribute="leading" constant="16" id="kWH-a3-nEr"/>
+                            <constraint firstItem="V5b-hV-WKn" firstAttribute="top" secondItem="0uL-zy-PSH" secondAttribute="top" multiplier="3.2" id="lIW-Tz-QJ2"/>
+                            <constraint firstItem="1uy-NJ-KR6" firstAttribute="top" secondItem="V5b-hV-WKn" secondAttribute="bottom" constant="16" id="nLQ-43-2gO"/>
+                            <constraint firstItem="srK-iz-db9" firstAttribute="leading" secondItem="0uL-zy-PSH" secondAttribute="leading" id="phy-Xd-LE6"/>
+                            <constraint firstItem="OQe-R7-MCk" firstAttribute="top" secondItem="0uL-zy-PSH" secondAttribute="top" id="qAq-Hg-srA"/>
+                            <constraint firstItem="0uL-zy-PSH" firstAttribute="trailing" secondItem="HwE-6R-q1C" secondAttribute="trailing" constant="16" id="r64-OQ-mQJ"/>
+                            <constraint firstItem="0uL-zy-PSH" firstAttribute="trailing" secondItem="1uy-NJ-KR6" secondAttribute="trailing" constant="16" id="vkK-BO-zoH"/>
+                            <constraint firstItem="V5b-hV-WKn" firstAttribute="leading" secondItem="0uL-zy-PSH" secondAttribute="leading" constant="16" id="xJN-6O-lUv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultButton" destination="HwE-6R-q1C" id="brk-tR-Bsh"/>
+                        <outlet property="textField" destination="srK-iz-db9" id="9WD-3k-QTs"/>
+                        <outlet property="textView" destination="9Ru-4P-j8B" id="Bu8-Wa-3Tm"/>
+                        <outlet property="titleLabel" destination="OQe-R7-MCk" id="9fY-oH-1HM"/>
+                        <outlet property="view" destination="MTZ-xD-4aN" id="2HJ-RW-s2G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="63.616071428571423"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
