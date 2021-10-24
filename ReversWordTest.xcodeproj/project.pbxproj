@@ -13,8 +13,13 @@
 		0463EE1826FFB336005F39D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0463EE1626FFB336005F39D5 /* Main.storyboard */; };
 		0463EE1A26FFB344005F39D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0463EE1926FFB344005F39D5 /* Assets.xcassets */; };
 		0463EE1D26FFB344005F39D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0463EE1B26FFB344005F39D5 /* LaunchScreen.storyboard */; };
-		0463EE2826FFB344005F39D5 /* ReversWordTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EE2726FFB344005F39D5 /* ReversWordTestTests.swift */; };
 		0463EE3326FFB344005F39D5 /* ReversWordTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EE3226FFB344005F39D5 /* ReversWordTestUITests.swift */; };
+		0463EE4A26FFBFB4005F39D5 /* ReversWordTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EE2726FFB344005F39D5 /* ReversWordTestTests.swift */; };
+		0463EE5126FFC4D0005F39D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EE1426FFB336005F39D5 /* ViewController.swift */; };
+		0463EE5D27009942005F39D5 /* ClassOfString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EE5C27009942005F39D5 /* ClassOfString.swift */; };
+		0463EE5E27009942005F39D5 /* ClassOfString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EE5C27009942005F39D5 /* ClassOfString.swift */; };
+		0463EE5F27009942005F39D5 /* ClassOfString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463EE5C27009942005F39D5 /* ClassOfString.swift */; };
+		04896714270B771B001E5D8C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04896713270B771B001E5D8C /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,8 @@
 		0463EE2E26FFB344005F39D5 /* ReversWordTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReversWordTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0463EE3226FFB344005F39D5 /* ReversWordTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversWordTestUITests.swift; sourceTree = "<group>"; };
 		0463EE3426FFB344005F39D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0463EE5C27009942005F39D5 /* ClassOfString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassOfString.swift; sourceTree = "<group>"; };
+		04896713270B771B001E5D8C /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +109,8 @@
 				0463EE1026FFB336005F39D5 /* AppDelegate.swift */,
 				0463EE1226FFB336005F39D5 /* SceneDelegate.swift */,
 				0463EE1426FFB336005F39D5 /* ViewController.swift */,
+				04896713270B771B001E5D8C /* Helpers.swift */,
+				0463EE5C27009942005F39D5 /* ClassOfString.swift */,
 				0463EE1626FFB336005F39D5 /* Main.storyboard */,
 				0463EE1926FFB344005F39D5 /* Assets.xcassets */,
 				0463EE1B26FFB344005F39D5 /* LaunchScreen.storyboard */,
@@ -258,8 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0463EE5D27009942005F39D5 /* ClassOfString.swift in Sources */,
 				0463EE1526FFB336005F39D5 /* ViewController.swift in Sources */,
 				0463EE1126FFB336005F39D5 /* AppDelegate.swift in Sources */,
+				04896714270B771B001E5D8C /* Helpers.swift in Sources */,
 				0463EE1326FFB336005F39D5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0463EE2826FFB344005F39D5 /* ReversWordTestTests.swift in Sources */,
+				0463EE5E27009942005F39D5 /* ClassOfString.swift in Sources */,
+				0463EE5126FFC4D0005F39D5 /* ViewController.swift in Sources */,
+				0463EE4A26FFBFB4005F39D5 /* ReversWordTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0463EE3326FFB344005F39D5 /* ReversWordTestUITests.swift in Sources */,
+				0463EE5F27009942005F39D5 /* ClassOfString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
